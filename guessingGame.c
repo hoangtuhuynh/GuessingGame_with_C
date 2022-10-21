@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-//Global variable to set the maximum number to be generated to recall the users input for the new max throughout the program
+//Global variable for max number and work through the entire program
 int max_number=10;
 int main()
 {
@@ -24,7 +24,7 @@ int main()
                     //when user enters q it quits the game
                     if(c[0]=='q') break;
                     else{
-                        //if the input is not q then it must be a guessed number convert the string to a number
+                        //if the input is not q then it must be a guessed number convert the string to an integer number
                         guess=atoi(c);
                     //if the guessed number is greater than the random generated number
                     if(guess>randomNumber)
